@@ -8,6 +8,10 @@
   font-size: 62.5%;
 }
 
+.hide {
+  display: none;
+}
+
 body {
   height: 100vh;
   background: linear-gradient(45deg, #190361 0%, #b0f 100%);
@@ -21,11 +25,107 @@ main {
   align-items: center;
 }
 
-main .box {
+.box1 {
   background: #fff;
   max-width: 42.8rem;
+  text-align: center;
+  padding: 4.8rem 6.4rem 6.4rem;
+  box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.8);
+  border-radius: 0.5rem;
+  color: #34355b;
 }
 
-.box {
+.box1 h1 {
+  margin-bottom: 1.4rem;
+
+  font-family: Montserrat;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.box1 p {
+  margin-bottom: 2rem;
+  font-family: DM Sans;
+  font-weight: 400;
+}
+
+.box1 img:hover {
+  animation-name: cookie-move;
+  animation-duration: 0.2s;
+  animation-iteration-count: infinite;
+
+  cursor: pointer;
+}
+
+.box2 {
+  background: #fff;
+  max-width: 42.8rem;
+  text-align: center;
+  padding: 4.8rem 6.4rem 4.8rem 6.4rem;
+  box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.8);
+  border-radius: 0.5rem;
   color: #34355b;
+}
+
+.box2 h1 {
+  margin-bottom: 1.7rem;
+
+  font-family: Montserrat;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.box2 p {
+  font-family: Dancing Script;
+  font-size: 2.4rem;
+  font-weight: 400;
+  padding: 1rem;
+
+  max-width: 27.3rem;
+
+  text-align: center;
+  background: #e4edf1;
+  box-shadow: 2px 2px 2px 0px rgba(85, 85, 85, 0.5);
+
+  animation-name: wordbox;
+  animation-duration: 5s;
+  transition: 0.5s;
+}
+
+.box2 button {
+  border: none;
+  border-radius: 4px;
+
+  background: #ff9500;
+  color: white;
+
+  padding: 1.6rem;
+
+  font-family: DM Sans;
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+.box2 button:hover {
+  background: #db8c1d;
+  transition: 0.3s;
+}
+
+@keyframes cookie-move {
+  from {
+    margin-left: 2%;
+  }
+  to {
+    margin-right: 2%;
+  }
+}
+
+@keyframes wordbox {
+  from {
+    position: absolute;
+    margin-top: 4rem;
+  }
 }
